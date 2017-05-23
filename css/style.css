@@ -1,0 +1,44 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+
+h1{
+  font-family: AvenirNext-Bold;
+  font-size: 49.22px;
+  color: #4A4A4A;
+
+}
+
+h2{
+  font-family: AvenirNext-Regular;
+font-size: 32.73px;
+color: #4A4A4A;
+
+}
+
+.block{
+  height: 400px;
+}
+
+.block.intro{
+  background-color: #E2EFD8;
+}
+
+.block.definitions{
+  background-color: #F7F8F9;
+}
+
+.block.graph1{
+  background-color: #45B853;
+}
+.block.summary{
+  background-color: #E2EFD8;
+}
+.block.graph2{
+  background-color: #45B853;
+}
+.block.methodology{
+  background-color: #F7F8F9;
+}
