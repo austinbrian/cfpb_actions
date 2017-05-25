@@ -3,19 +3,27 @@
     padding:0;
 }
 
+body,html{
+    width:100%;
+}
 
 h1{
-  font-family: AvenirNext-Bold;
-  font-size: 49.22px;
+  font-family: Merriweather;
+  font-weight: 700;
+  font-size: 52px;
   color: #4A4A4A;
-  padding: 0%;
+  padding: 7%;
 
 }
 
+.methodology{
+  padding: 0%;
+}
 h2{
   font-family: AvenirNext-Regular;
-font-size: 32.73px;
-color: #4A4A4A;
+  font-size: 32.73px;
+  color: #4A4A4A;
+  padding-top: 3%;
 
 }
 
@@ -25,21 +33,26 @@ color: #4A4A4A;
 
 .block.intro{
   background-color: #E2EFD8;
+  height: 500px;
 }
 
-.subtitle{
-  font-family: AvenirNext-Regular;
-  font-size: 21.95px;
-  text-align: right;
+.subtitle, .social{
+  font-family: Merriweather;
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+  padding-right: 50px;
 }
 
 p, h3{
-  font-family: AvenirNext-Regular;
-  font-size: 16.95px;
+  font-family: Source Sans Pro;
+  font-weight: 400;
+  font-size: 17px;
 }
 
 .block.definitions{
   background-color: grey;
+  height: 325px;
 }
 
 .block.graph1{
@@ -66,21 +79,22 @@ p, h3{
 
 .container{
   padding: 0;
-  margin: 0px;
+  /*margin: 0px;*/
+  margin-top: 5%;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   align-items: center;
   align-content: stretch;
-  width: 1812px;
-  height: 450px;
+  justify-content: space-around;
 }
 
+
 .textBox, .graphTextBox, .graphBox{
-  background-color: #E2EFD8;
-  border-style: solid;
-  border-width: 5px;
-  border-color: black;
+
+  /*border-style: solid;*/
+  /*border-width: 5px;
+  border-color: black;*/
   padding: 5px;
   width: 350px;
   height: 60%;
@@ -91,11 +105,32 @@ p, h3{
   text-align: center;
 }
 
+.textBox{
+  margin: -25px;
+  height: 250px;
+}
 .graphTextBox, .graphBox{
   width: 500px;
   height: 400px;
+}
+
+.footer {
+  height: 600px;
+  text-align: center;
+}
+
+.methodology, .summary{
+  padding: 3%;
+  margin: 20px;
 }
 /*
 button{
   text: #0072CE
 }*/
+footer{
+  height: 100px;
+}
+
+.social{
+  padding: 30px;
+}
