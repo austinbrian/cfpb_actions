@@ -1,0 +1,101 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+
+h1{
+  font-family: AvenirNext-Bold;
+  font-size: 49.22px;
+  color: #4A4A4A;
+  padding: 0%;
+
+}
+
+h2{
+  font-family: AvenirNext-Regular;
+font-size: 32.73px;
+color: #4A4A4A;
+
+}
+
+.block{
+  height: 400px;
+}
+
+.block.intro{
+  background-color: #E2EFD8;
+}
+
+.subtitle{
+  font-family: AvenirNext-Regular;
+  font-size: 21.95px;
+  text-align: right;
+}
+
+p, h3{
+  font-family: AvenirNext-Regular;
+  font-size: 16.95px;
+}
+
+.block.definitions{
+  background-color: grey;
+}
+
+.block.graph1{
+  background-color: #45B853;
+}
+.block.summary{
+  background-color: #E2EFD8;
+}
+.block.graph2{
+  background-color: #45B853;
+}
+.block.methodology{
+  background-color: #CCDFDF;
+}
+
+.block.methodology, .block.summary, .block.definitions{
+  height: 450px;
+}
+
+.block.graph1, .block.graph2{
+  height: 650px;
+}
+
+
+.container{
+  padding: 0;
+  margin: 0px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  align-content: stretch;
+  width: 1812px;
+  height: 450px;
+}
+
+.textBox, .graphTextBox, .graphBox{
+  background-color: #E2EFD8;
+  border-style: solid;
+  border-width: 5px;
+  border-color: black;
+  padding: 5px;
+  width: 350px;
+  height: 60%;
+  margin: 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 3em;
+  text-align: center;
+}
+
+.graphTextBox, .graphBox{
+  width: 500px;
+  height: 400px;
+}
+/*
+button{
+  text: #0072CE
+}*/
