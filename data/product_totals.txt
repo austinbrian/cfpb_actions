@@ -16,3 +16,5 @@ Vehicle loan or lease                                                           
 Money transfer, virtual currency, or money service                                  99
 Payday loan, title loan, or personal loan                                           90
 Virtual currency                                                                    18
+
+/product totals as of 2/25/17
