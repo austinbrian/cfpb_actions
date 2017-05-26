@@ -38,8 +38,8 @@ h2{
 
 .subtitle, .social{
   font-family: Merriweather;
-  font-weight: 400;
-  font-size: 20px;
+  font-weight: 100;
+  font-size: 40px;
   text-align: center;
   padding-right: 50px;
 }
@@ -48,6 +48,10 @@ p, h3{
   font-family: Source Sans Pro;
   font-weight: 400;
   font-size: 17px;
+}
+
+#word{
+  text-decoration: underline;
 }
 
 .block.definitions{
