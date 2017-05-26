@@ -16,16 +16,26 @@ h1 {
 }
 
 h2 {
-  font-family: AvenirNext-Regular;
+  font-family: Source Sans Pro;
   font-size: 32.73px;
   color: #4A4A4A;
   padding-top: 3%;
+  padding-left: 1%;
 }
 
 p, h3 {
   font-family: Source Sans Pro;
   font-weight: 400;
   font-size: 17px;
+}
+
+h4 {
+    font-family: Merriweather;
+    font-weight: 700;
+    font-size: 22px;
+    color: #4A4A4A;
+    padding-bottom: 1%;
+    padding-top: 2%;
 }
 
 footer {
@@ -64,7 +74,7 @@ footer {
 
 .Definitions {
     background-color: grey;
-    height: 325px;
+    height: 400px;
 }
 
 .block.graph1 {
@@ -119,7 +129,7 @@ footer {
 
 .textBox {
     margin: -25px;
-    height: 250px;
+    /*height: 250px;*/
 }
 
 .graphTextBox, .graphBox {
