@@ -38,6 +38,11 @@ h4 {
     padding-top: 2%;
 }
 
+img{
+  height: 500px;
+width: 1200px;
+}
+
 footer {
     height: 100px;
 }
@@ -113,6 +118,10 @@ footer {
     justify-content: space-around;
 }
 
+img{
+  width: 510px;
+  height: 410px;
+}
 .textBox, .graphTextBox, .graphBox {
     /*border-style: solid;*/
     /*border-width: 5px;
@@ -134,6 +143,16 @@ footer {
 
 .graphTextBox, .graphBox {
     width: 500px;
+    height: 400px;
+}
+
+.barGraphBox {
+    width: 800px;
+    height: 400px;
+}
+
+img.lgGraphBox {
+    width: 800px;
     height: 400px;
 }
 
