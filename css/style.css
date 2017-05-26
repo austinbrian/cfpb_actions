@@ -64,7 +64,7 @@ footer {
 
 .Definitions {
     background-color: grey;
-    height: 325px;
+    height: 400px;
 }
 
 .block.graph1 {
@@ -119,7 +119,7 @@ footer {
 
 .textBox {
     margin: -25px;
-    height: 250px;
+    /*height: 250px;*/
 }
 
 .graphTextBox, .graphBox {
