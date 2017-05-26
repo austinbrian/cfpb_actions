@@ -1,101 +1,154 @@
-*{
-    margin:0;
-    padding:0;
+* {
+    margin: 0;
+    padding: 0;
 }
 
+body, html {
+    width: 100%;
+}
 
-h1{
-  font-family: AvenirNext-Bold;
-  font-size: 49.22px;
+h1 {
+    font-family: Merriweather;
+    font-weight: 700;
+    font-size: 52px;
+    color: #4A4A4A;
+    padding: 7%;
+}
+
+h2 {
+  font-family: Source Sans Pro;
+  font-size: 32.73px;
   color: #4A4A4A;
+  padding-top: 3%;
+  padding-left: 1%;
+}
+
+p, h3 {
+  font-family: Source Sans Pro;
+  font-weight: 400;
+  font-size: 17px;
+}
+
+h4 {
+    font-family: Merriweather;
+    font-weight: 700;
+    font-size: 22px;
+    color: #4A4A4A;
+    padding-bottom: 1%;
+    padding-top: 2%;
+}
+
+footer {
+    height: 100px;
+}
+
+.Introduction {
+  background-color: #E2EFD8;
+  height: 500px;
+}
+
+.subtitle, .social {
+    font-family: Source Sans Pro;
+    font-weight: 100;
+    font-size: 34px;
+    text-align: right;
+    padding-right: 50px;
+}
+
+#word {
+  text-decoration: underline;
+}
+
+
+.methodology {
   padding: 0%;
-
 }
 
-h2{
-  font-family: AvenirNext-Regular;
-font-size: 32.73px;
-color: #4A4A4A;
-
-}
-
-.block{
-  height: 400px;
-}
-
-.block.intro{
-  background-color: #E2EFD8;
-}
-
-.subtitle{
-  font-family: AvenirNext-Regular;
-  font-size: 21.95px;
-  text-align: right;
-}
-
-p, h3{
-  font-family: AvenirNext-Regular;
-  font-size: 16.95px;
-}
-
-.block.definitions{
-  background-color: grey;
-}
-
-.block.graph1{
-  background-color: #45B853;
-}
-.block.summary{
-  background-color: #E2EFD8;
-}
-.block.graph2{
-  background-color: #45B853;
-}
-.block.methodology{
-  background-color: #CCDFDF;
-}
-
-.block.methodology, .block.summary, .block.definitions{
-  height: 450px;
-}
-
-.block.graph1, .block.graph2{
-  height: 650px;
+.block {
+    height: 400px;
 }
 
 
-.container{
-  padding: 0;
-  margin: 0px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  align-items: center;
-  align-content: stretch;
-  width: 1812px;
-  height: 450px;
+
+
+
+.Definitions {
+    background-color: grey;
+    height: 400px;
 }
 
-.textBox, .graphTextBox, .graphBox{
-  background-color: #E2EFD8;
-  border-style: solid;
-  border-width: 5px;
-  border-color: black;
-  padding: 5px;
-  width: 350px;
-  height: 60%;
-  margin: 10px;
-  color: white;
-  font-weight: bold;
-  font-size: 3em;
-  text-align: center;
+.block.graph1 {
+    background-color: #45B853;
 }
 
-.graphTextBox, .graphBox{
-  width: 500px;
-  height: 400px;
+.block.summary {
+    background-color: #E2EFD8;
 }
-/*
-button{
-  text: #0072CE
-}*/
+
+.block.graph2 {
+    background-color: #45B853;
+}
+
+.block.methodology {
+    background-color: #CCDFDF;
+}
+
+.block.methodology, .block.summary, .block.definitions {
+    height: 450px;
+}
+
+.block.graph1, .block.graph2 {
+    height: 650px;
+}
+
+.container {
+    padding: 0;
+    /*margin: 0px;*/
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    align-content: stretch;
+    justify-content: space-around;
+}
+
+.textBox, .graphTextBox, .graphBox {
+    /*border-style: solid;*/
+    /*border-width: 5px;
+  border-color: black;*/
+    padding: 5px;
+    width: 350px;
+    height: 60%;
+    margin: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 3em;
+    text-align: center;
+}
+
+.textBox {
+    margin: -25px;
+    /*height: 250px;*/
+}
+
+.graphTextBox, .graphBox {
+    width: 500px;
+    height: 400px;
+}
+
+.footer {
+    height: 600px;
+    text-align: center;
+}
+
+.methodology, .summary {
+    padding: 3%;
+    margin: 20px;
+}
+
+
+
+.social {
+    padding: 30px;
+}
