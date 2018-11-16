@@ -44,7 +44,7 @@ print('{} complaints'.format(len(data)))
 data = data[['complaint_what_happened','product','date_received','company']]
 
 additional_stop_words = ['xxx','xxxx','00','xx','xx xx','000','00and','xxxxxxxx']
-additional_stop_words = [unicode(i,'utf-8') for i in additional_stop_words]
+additional_stop_words = [(i,'utf-8') for i in additional_stop_words]
 stop = set(stopwords.words('english') + list(string.punctuation) + additional_stop_words)
 stemmer = PorterStemmer()
 re_punct = re.compile('[' + ''.join(string.punctuation) + ']')
@@ -71,7 +71,6 @@ data['tokens'] = data['complaint_what_happened'].progress_map(preprocess)
 ##############
 
 data = data[data['tokens'].notnull()]
-print data.shape
 data.reset_index(inplace=True)
 data.drop('index', inplace=True, axis=1)
 print('{} complaints'.format(len(data)))
@@ -109,7 +108,7 @@ def ldaCV(n_topics, corpus, id2word, test_size=0.2, sample=None):
 
     return perplexities
 
-%time p = ldaCV(list(range(50,450,50)),corpus,id2word)
+p = ldaCV(list(range(50,450,50)),corpus,id2word)
 
 x, y = zip(*p)
 plt.plot(x, y)
