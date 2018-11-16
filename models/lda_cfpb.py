@@ -19,7 +19,6 @@ from tabulate import tabulate
 import pyLDAvis.gensim
 from gensim.models.doc2vec import Doc2Vec, TaggedDocument
 import matplotlib.pyplot as plt
-%matplotlib inline
 from sklearn import svm
 
 
