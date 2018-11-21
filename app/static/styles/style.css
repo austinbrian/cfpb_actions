@@ -171,4 +171,6 @@ img.lgGraphBox {
 .social {
     padding: 30px;
     text-align: left;
+    display: flex;
+    align-content: flex-start;
 }
