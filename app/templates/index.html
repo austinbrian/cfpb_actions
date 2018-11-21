@@ -1,20 +1,6 @@
-<!doctype html>
-<html lang="en">
+{% extends "base.html" %}
 
-<head>
-    <meta charset="utf-8">
-
-    <title>CFPB Tracker</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Merriweather|Source+Sans+Pro" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <script src="script.js"></script>
-
-</head>
-
-<body>
-
+{% block content %}
     <div class="Introduction">
         <h1>CFPB Complaints and Actions</h1>
         <div class="subtitle">People think consumer finance companies are:
@@ -45,7 +31,7 @@
         <h2>Complaints and Actions 2010 - Present</h2>
         <div class="container">
             <div class="lgGraphBox">
-              <img src="./css/images/all_complaints_line.png" alt="data" class="lgGraphBox">
+            <img src="{{ url_for('static', filename='images/all_complaints_line.png') }}" alt="data" class="lgGraphBox">
             </div>
             <div class="graphTextBox">
                 <h2>Text About Graph</h2>
@@ -74,7 +60,7 @@
         <h2>Complaints and Actions by Company & Product</h2>
         <div class="container">
             <div class="graphBox">
-              <img src="./css/images/product_bar_chart_w_narrative.png" alt="data" class="lgGraphBox">
+            <img src="{{ url_for('static', filename='images/product_bar_chart_w_narrative.png') }}" alt="data" class="lgGraphBox">
             </div>
             <div class="graphTextBox">
                 <h2>Text About Graph</h2>
@@ -84,7 +70,7 @@
             </div>
         </div>
     </div>
-  <div class="summary">
+<div class="summary">
     <div class="Methodology">
         <h4>Intro to Methodology</h4>
         <p>
@@ -101,28 +87,17 @@
             iaculis.
         </p>
     </div>
-  </div>
+</div>
     <div class="block graph2">
         <h2>Methods/Models</h2>
         <div class="container">
             <div class="graphBox">
-                <img src="./css/images/conceptual_topic_modeling_raw.png" alt="data">
+                <img src="{{ url_for('static', filename='images/conceptual_topic_modeling_raw.png') }}" alt="topic conceptual raw">
             </div>
             <div class="graphTextBox">
-              <img src="./css/images/conceptual_topic_modeling_model.png" alt="data">
+                <img src="{{ url_for('static', filename='images/conceptual_topic_modeling_model.png') }}" alt="topic conceptual">
             </div>
         </div>
     </div>
 
-</body>
-<footer>
-    <div>By Brian Austin and Meag Doherty</div>
-    <div class="social">
-        Learn More:
-        <a href="https://github.com/meagdoh"><i class="fa fa-github fa-2x"></i></a>
-        <a href="https://github.com/meagdoh"><i class="fa fa-twitter fa-2x"></i></a>
-        <a href="https://github.com/meagdoh"><i class="fa fa-linkedin fa-2x"></i></a>
-    </div>
-</footer>
-
-</html>
+{% endblock %}

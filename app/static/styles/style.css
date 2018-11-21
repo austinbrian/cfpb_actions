@@ -56,8 +56,8 @@ footer {
     font-family: Source Sans Pro;
     font-weight: 100;
     font-size: 34px;
-    text-align: right;
-    padding-right: 50px;
+    text-align: left;
+    /* padding-right: 50px; */
 }
 
 #word {
@@ -170,4 +170,5 @@ img.lgGraphBox {
 
 .social {
     padding: 30px;
+    text-align: left;
 }
