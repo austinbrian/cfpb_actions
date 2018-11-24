@@ -1,5 +1,5 @@
-# useful library for reading in data
 import pandas as pd
+import os
 
 # the base API
 api = "https://data.consumerfinance.gov/resource/jhzv-w97w.json"
@@ -12,7 +12,7 @@ query = '?&$limit=100000'
     
 # I have an app token in case we need that, but I haven't so far
 dataset_identifier = 'jhzv-w97w'
-APP_TOKEN = '48ozcpj4nCO3mqgJOl8GoIJgF'
+APP_TOKEN = os.getenv('CFPB_APP_TOKEN')
 token = '?$$app_token='
 
 # total query we're running at the moment
@@ -23,6 +23,6 @@ full_query = api+query
 cfpb = pd.read_json(full_query)
 
 # saves the data as a csv
-cfpb.to_csv('cfpb_sample_data.csv',encoding='utf-8',index=False)
+cfpb.to_csv('test_data/cfpb_sample_data.csv',encoding='utf-8',index=False)
 
 # this squeezes in under the 50M limit at which github yells at you
