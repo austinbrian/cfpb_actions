@@ -5,7 +5,7 @@ from bokeh.models import HoverTool, BoxSelectTool
 
 output_file=('scatter_totals.html')
 TOOLS = 'box_zoom,box_select,crosshair,resize,reset,hover'
-dt = data.groupby('date_received')['product'].count()
+# dt = data.groupby('date_received')['product'].count()
 
 # TOOLS = [BoxSelectTool(), HoverTool()]
 p = figure(plot_width=900, plot_height=400,x_axis_type='datetime',title='CFPB Complaints per Day')

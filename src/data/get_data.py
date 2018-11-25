@@ -25,7 +25,7 @@ class CFPBdata:
             beginning_date = date[0]
             end_date = date[-1]
             self.query = self.query+f'$where=date%20between%20%27{beginning_date}%27%20and%20%27{end_date}'
-        
+        return self
 
     def get_data(self):
         '''
